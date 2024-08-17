@@ -11,11 +11,11 @@ import threads.Semaforo;
  */
 public class Main {
 
-    static Semaforo semaforo = new Semaforo(1);
+    static Semaforo semaforo = new Semaforo();
     
     public static void main(String[] args) throws InterruptedException {
-        deadlock();
-        //racecondition();
+        //deadlock();
+        racecondition();
     }
     
     public static void racecondition() throws InterruptedException{
